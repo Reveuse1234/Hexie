@@ -1,0 +1,5 @@
+{
+  "installCommand": "npm install --prefix my-editor-app",
+  "buildCommand": "npm run build",
+  "outputDirectory": "my-editor-app/dist"
+}

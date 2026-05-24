@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+
+  --hexie-bg: #07070d;
+  --hexie-bg-elevated: #0f0f18;
+  --hexie-surface: #14141f;
+  --hexie-border: rgba(0, 245, 255, 0.15);
+  --hexie-neon-cyan: #00f5ff;
+  --hexie-neon-magenta: #ff00aa;
+  --hexie-neon-purple: #bf00ff;
+  --hexie-neon-green: #39ff14;
+  --hexie-text: #e2e8f0;
+  --hexie-text-muted: #94a3b8;
+  --hexie-glow-cyan: 0 0 20px rgba(0, 245, 255, 0.35);
+  --hexie-glow-magenta: 0 0 20px rgba(255, 0, 170, 0.35);
+
+  --sans: "Space Grotesk", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--sans);
+  background: var(--hexie-bg);
+  color: var(--hexie-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  outline: none;
+}
+
+/* Neon grid background utility */
+.hexie-grid-bg {
+  background-color: var(--hexie-bg);
+  background-image:
+    linear-gradient(rgba(0, 245, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 245, 255, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.hexie-glow-text {
+  background: linear-gradient(135deg, var(--hexie-neon-cyan), var(--hexie-neon-purple), var(--hexie-neon-magenta));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes hexie-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+@keyframes hexie-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}

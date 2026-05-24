@@ -1,0 +1,13 @@
+{
+  "name": "hexie",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Hexie — your friendly coding space",
+  "scripts": {
+    "dev": "npm run dev --prefix my-editor-app",
+    "build": "npm run build --prefix my-editor-app",
+    "preview": "npm run preview --prefix my-editor-app",
+    "lint": "npm run lint --prefix my-editor-app"
+  }
+}

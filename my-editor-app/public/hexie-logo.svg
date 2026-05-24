@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" aria-label="Hexie logo">
+  <!-- Original artwork for the Hexie project. Copyright (c) 2026 Hexie. -->
+  <defs>
+    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="50%" stop-color="#bf00ff"/>
+      <stop offset="100%" stop-color="#ff00aa"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <polygon
+    points="60,8 108,36 108,84 60,112 12,84 12,36"
+    stroke="url(#hexGrad)"
+    stroke-width="3"
+    fill="rgba(0,245,255,0.06)"
+    filter="url(#glow)"
+  />
+  <polygon
+    points="60,24 92,44 92,76 60,96 28,76 28,44"
+    stroke="url(#hexGrad)"
+    stroke-width="1.5"
+    fill="none"
+    opacity="0.5"
+  />
+  <text
+    x="60"
+    y="68"
+    text-anchor="middle"
+    font-family="ui-monospace, monospace"
+    font-size="28"
+    font-weight="700"
+    fill="url(#hexGrad)"
+  >&lt;/&gt;</text>
+</svg>
