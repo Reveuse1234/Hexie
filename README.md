@@ -2,6 +2,8 @@
 
 **your friendly coding space**
 
+**Live site:** https://hexie-eta.vercel.app
+
 A browser-based code editor with a dark neon workspace, multi-file sidebar, and in-browser execution for JavaScript and Python.
 
 ---
